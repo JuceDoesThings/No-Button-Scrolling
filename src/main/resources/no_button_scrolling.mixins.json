@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "com.jucedoesthings.no_button_scrolling.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [],
+	"client": [
+      "NoTextScrollingMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

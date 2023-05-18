@@ -1,0 +1,40 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "com.example",
+		"id": "no_button_scrolling",
+		"version": "${version}",
+		"metadata": {
+			"name": "No Button Scrolling",
+			"description": "Removes that annoying text scrolling feature from 1.19.4+",
+			"contributors": {
+				"Your name here": "JuceDoesThings"
+			},
+			"contact": {
+				"homepage": "https://example.com/",
+				"issues": "https://github.com/QuiltMC/quilt-template-mod/issues",
+				"sources": "https://github.com/QuiltMC/quilt-template-mod"
+			},
+			"icon": "assets/no_button_scrolling/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": "com.jucedoesthings.no_button_scrolling.NoButtonScrolling"
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.18.3-"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=6.0.0-"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.19.4"
+			}
+		]
+	},
+	"mixin": "no_button_scrolling.mixins.json"
+}
